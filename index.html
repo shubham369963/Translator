@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        <title>translator</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-input">
+                    <textarea placeholder="Enter Text" class="from-text"></textarea>
+                    <textarea placeholder="Translation" class="to-text" readonly disabled></textarea>
+                </div>
+                <ul class="controls">
+                    <li class="row from">
+                        <div class="icons">
+                            <i id="from" class="fas fa-volume-up text"> </i>
+                            <span class="tooltip">speak</span>
+                            <i id="from" class="fas fa-copy text"> </i>
+                            <span class="tooltip">copy text</span>
+                            <i id="from" class="fas fa-microphone text"> </i>
+                            <span class="tooltip">start your speech by saying start</span>
+                        </div>
+                        <select></select>
+                    </li>
+                    <li class="exchange"><i class="fas fa-exchange-alt text"></i><span class="tooltip">exchange language</span></li>
+                    <li class="row to">
+                        <select></select>
+                        <div class="icons">
+                            <i id="to" class="fas fa-volume-up text"> </i>
+                            <span class="tooltip">speak</span>
+                            <i id="to" class="fas fa-copy text"> </i>
+                            <span class="tooltip">copy text</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button>Translate Text</button>
+        </div>
+        <script src="js/annyang.min.js"></script>
+        <script src="js/countries.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
